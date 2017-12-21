@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="loginBox">            
-            <img src="images\   user.png" class="avatar">
+            <img src="images\user.png" class="avatar">
             <h2>Login In</h2>
             <form name="loginform" method="POST" onsubmit="return valid()" action="index.php">
                 <p>Email</p>
