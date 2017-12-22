@@ -263,3 +263,33 @@ body{
     margin:50px 0px 15px 250px; 
     padding: 15px 15px 15px 15px;
 }
+.menuform{
+    background-color: #283747;
+    color: white;
+    height: 40px;
+    margin-bottom: 0px;
+}
+.menuform input[type="submit"]{
+    height: 40px;
+    background-color: #283747;
+    color: white;
+    border: none;
+}
+.menuform input[type="submit"]:hover{
+    height: 40px;
+    background-color: #283747;
+    color: rgb(29, 18, 59);
+}
+.menuform input[type="submit"]:active{
+    height: 40px;
+    background-color: #283747;
+    color: rgb(228, 131, 21);
+}
+.homebody{
+    background-color: #3b5166;
+}
+.bottomborder{
+    border-bottom: 1px;
+    border-bottom-color: #283747;
+    width: 100%;
+}
