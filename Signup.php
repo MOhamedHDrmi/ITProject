@@ -1,26 +1,27 @@
 <html>
     <head>
         <title>Sign Up</title>
-        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="Validation.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
-        <div class="SignupBox">            
+        <div class="signupBox">            
             <img src="images\signup.png" class="welcome">
             <h2>Sign Up</h2>
-            <form>
+            <form name="signupform" onsubmit="return signupvalid()" action="signup_ok.php" method="post">
                 <p>Name</p>
-                <input type="text" placeholder="your name">
-                <div class="valid"></div>
+                <input name="username" type="text" placeholder="user name">
+                <div id="validname" class="valid"><?php echo $user;?></div>
                 <p>Email</p>
-                <input type="text" placeholder="avatar@example.com">
-                <div class="valid"></div>
+                <input name="email" type="text" placeholder="avatar@example.com">
+                <div id="validemail" class="valid"></div>
+                <p>Phone Number</p>
+                <input name="phonenumber" type="text" placeholder="01xxxxxxxxx">
+                <div id="validphone" class="valid"></div>
                 <p>Password</p>
-                <input type="password" placeholder="*******">
-                <div class="valid"></div>
-                <p>Confirm Password</p>
-                <input type="password" placeholder="*******">
-                <div class="valid"></div>
-                <input type="Submit" value="Sign Up">
+                <input name="password" type="password" placeholder="*********">
+                <div id="validpassword" class="valid"></div>
+                <input type="Submit" value="Sign Up">       
             </form>
         </div>
     </body>

@@ -21,11 +21,11 @@ body{
     border-radius: 15px;
     position: absolute;
     padding: 80px 40px;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 350px;
-    height: 600px;
+    width: 400px;
+    height: 580px;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.534);
 }
@@ -47,9 +47,11 @@ body{
     top: calc(-100px/2);
     left:calc(50% - 50px);
 }
-.validemail,
-.validpassword,.valid{
-    height: 40px;
+.valid{
+    height: 30px;
+    font-size: 15px;
+    color: rgb(238, 255, 2);
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
 .signupBox h2{
     margin: 0;
