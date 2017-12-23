@@ -17,9 +17,8 @@ if ($query)
 }
 else
 {
-    echo "not inserted<br>";
+    header("location: signup.php");
 }
 
 mysql_close($con);
-
 ?>
