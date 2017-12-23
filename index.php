@@ -3,9 +3,14 @@ echo "<style type='text/css'>";
 include'style.css';
 echo "</style>";
 
+<<<<<<< HEAD
 $categories=array();
 $categories_nospace=array();
 $con=mysql_connect("localhost","root","italia01144152537");
+=======
+$con=mysql_connect("localhost","root","111452111");
+$title;
+>>>>>>> aefa1fc13ed8f1a324d74f0af351572002879392
 mysql_select_db("sports.com");
 $query=mysql_query("SELECT * FROM `category`");
 while($row=mysql_fetch_array($query)){
