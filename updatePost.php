@@ -13,7 +13,7 @@ $post=$_POST['post'];
 $catgory=$_POST['category'];
 $image=$_POST['image'];
 
-$con2=mysql_connect("localhost","root","128youssuf1997");
+$con2=mysql_connect("localhost","root","italia01144152537");
 mysql_select_db("sports.com");
  $query=mysql_query("UPDATE `news` SET `post` = '$post' WHERE `news`.`id` ='$id' ");
  $query=mysql_query("UPDATE `news` SET `title` = '$title' WHERE `news`.`id` ='$id' ");
@@ -28,14 +28,14 @@ mysql_select_db("sports.com");
  }
  mysql_close($con2);
 }
-/*UPDATE `news` SET `post` = 'post' WHERE `news`.`id` = 1 */
+
 ?>
 <div class="outdiv">
 <div class="editform">
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 <?php
 $id=1;
-$con=mysql_connect("localhost","root","128youssuf1997");
+$con=mysql_connect("localhost","root","italia01144152537");
 mysql_select_db("sports.com");
  $query=mysql_query("SELECT * FROM `news` WHERE `id` = '$id' ");
  $row=mysql_fetch_array($query);

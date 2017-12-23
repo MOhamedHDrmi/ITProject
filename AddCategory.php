@@ -3,11 +3,11 @@
 $category_name=$_POST["category_name"];
 
 
-$con=mysql_connect("localhost","root","");
+$con=mysql_connect("localhost","root","italia01144152537");
 
 mysql_select_db("sports.com");
 
-$query=mysql_query("insert into category (name) values ('$category_name')");
+$query=mysql_query("INSERT INTO `category`(`name`) VALUES ('$category_name')");
 
 if ($query)
 {

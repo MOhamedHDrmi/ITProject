@@ -289,9 +289,19 @@ body{
 }
 .homebody{
     background-color: #3b5166;
+    text-align: left;
 }
 .bottomborder{
     border-bottom: 1px;
     border-bottom-color: #283747;
-    width: 100%;
+   /* width: 100%;*/
+}
+.homebody td{
+    direction: ltr;
+    text-align: left;
+    vertical-align: top;
+}
+.homebody tr{
+
+    text-align-last: left;
 }
