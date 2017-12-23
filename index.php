@@ -1,21 +1,20 @@
 <?php
+session_start();
 echo "<style type='text/css'>"; 
 include'style.css';
 echo "</style>";
 
-<<<<<<< HEAD
 $categories=array();
 $categories_nospace=array();
 $con=mysql_connect("localhost","root","italia01144152537");
-=======
-$con=mysql_connect("localhost","root","111452111");
-$title;
->>>>>>> aefa1fc13ed8f1a324d74f0af351572002879392
 mysql_select_db("sports.com");
 $query=mysql_query("SELECT * FROM `category`");
 while($row=mysql_fetch_array($query)){
     $categories[]=$row[0];
     $categories_nospace[]=str_replace(" ","",$row[0]);
+}
+if(!(isset($_SESSION["id"]))){
+    header("location: login.php");
 }
 ?>
 
@@ -61,6 +60,16 @@ while($row=mysql_fetch_array($query)){
         }
         echo '</ul>';
         echo "</div>";
+        
+        $ID=$_SESSION["id"];
+        $query=mysql_query("SELECT * FROM `user` WHERE id='$ID'");
+        $row=mysql_fetch_array($query);
+        if($row["type"]=="admin"){
+            echo '<div calss="admindiv">';
+                echo "<a href='addPost.php?id=".$row['id']."'>Add Post</a>";
+            echo '</div>';
+        }
+       
         mysql_close($con);
     ?>
     </div>
